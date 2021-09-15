@@ -1,10 +1,36 @@
+body{
+	background-color: #ecf0f1;
+}
 .wrapper{
-	background: red;
+	
 }
 .container{
 	width: 1200px;
 	margin: auto;
 	padding-right: 10px;
 	padding-left: 10px;
-	background: blue;
+	background-color: #bdc3c7;
+}
+.sidebar{
+	width: 400px;
+	height: 600px;
+	float: left;
+}
+.content{
+	width: 800px;
+	height: 600px;
+	float: right;
+}
+.clear{
+	clear: both;
+}
+#logo{
+	float: left;
+	width: 200px;
+	height: auto;
+	padding: 20px;
+}
+#logo img{
+	max-width: 70%;
+	height: auto;
 }
