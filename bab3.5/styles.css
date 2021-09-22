@@ -116,3 +116,9 @@ body{
 	height: 750px;
 	width: 500px;
 }
+#putarVideo{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	float: right;
+	width: 960px;
+}
