@@ -89,13 +89,8 @@ body{
 	margin-left: 38px;
 	z-index: 1;
 }
-#headerFixedMaskeran{
-	position: fixed;
-	margin-left: 45px;
-	z-index: 1;
-}
 #jarakheader{
-	height: 184px;
+	height: 240px;
 }
 .image-box{
     position: relative;
