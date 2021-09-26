@@ -2,31 +2,42 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Wrapper dan Container</title>
+	<title>Beranda</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="../assets/js/jquery-3.6.0.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#buttonSidebar").click(function(){
+				$(".sidebar").fadeToggle("slow");
+			});
+		});
+	</script>
 </head>
 <body>
-	<!-- Start Header -->
-	<div id="headerFixed" class="wrapper">
+	<div class="wrapper" id="header">
 		<div class="container">
-			<div id="logo">
-				<img src="https://w7.pngwing.com/pngs/690/107/png-transparent-logo-green-font-small-animal-logo-art-circle.png" height="50" alt="logo gtau">
-			</div>
-			<div id="menu">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#">Tentang</a></li>
-					<li><a href="#">Kontak</a></li>
-				</ul>
-			</div>
-			<div class="clear"></div>
+				<div id="logo">
+					<img src="https://w7.pngwing.com/pngs/690/107/png-transparent-logo-green-font-small-animal-logo-art-circle.png" height="50" alt="logo gtau">
+					<button id="buttonSidebar">Toggle Sidebar</button>
+				</div>
+				<div id="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Tentang</a></li>
+						<li><a href="#">Kontak</a></li>
+						<li>
+							<div class="sticky">
+								<div id="putarAudio">
+									<iframe width="70%" height="20" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/609521181&color=%23ff5500"></iframe>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
 		</div>
 	</div>
-	<!-- End Header -->
-
-	<!-- Start Separator -->
-	<div id="jarakheader"></div>
-	<!-- End Separator -->
 
 	<!-- sidebar and content -->
 	<div class="wrapper">
@@ -35,11 +46,12 @@
 			<!-- Start Sidebar -->
 			<div class="sidebar">
 				<div class="recent-article">
-					<h2>Terpopuler</h2>
+					<h2>Rekomendasi</h2>
 					<ul>
+						<li><a href="historia-wangi.html">Historia wangi banget</a></li>
+						<li><a href="pembohong.html">Pembohong</a></li>
 						<li><a href="bersepeda-di-tengah-pandemi.html">Bersepeda Di Tengah Pandemi</a></li>
 						<li><a href="maskeran-bung.html">Maskeran Bung</a></li>
-						<li><a href="lihatpdf.html" target="_blank">Lihat PDF!</a></li>
 					</ul>
 				</div>
 			</div>
@@ -57,9 +69,7 @@
 					<div class="text-box">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.
+							tempor incididunt ut labore et dolore magna aliqua.
 						</p>
 						<a href="bersepeda-di-tengah-pandemi.html">Read More...</a>
 					</div>
@@ -74,94 +84,85 @@
 					<div class="text-box">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.
+							tempor incididunt ut labore et dolore magna aliqua.
 						</p>
 						<a href="maskeran-bung.html">Read More...</a>
 					</div>
 				</div>
+				<div class="clear"></div>
 				<div class="blog-content">
 					<div class="image-box">
-						<img src="https://www.rodalink.com/pub/media/rodalinkapp/blogpost/image/1/5/1588146242.jpg" alt="">
+						<img src="https://scontent.fsub8-1.fna.fbcdn.net/v/t1.6435-9/242681446_337103681545254_4679705072813135667_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=9267fe&_nc_eui2=AeGFMe2GdzdBYStx3Cc3RN1MtWAnRDZRZrG1YCdENlFmsfvWI12uQF8kisDKyNFvVnUeljz0tp4Ve5SPpibPG90w&_nc_ohc=GoRxi2AJwowAX84h6g_&_nc_ht=scontent.fsub8-1.fna&oh=d0daa8d19451a67d58547dfe13c52e0d&oe=617577C6" alt="">
 						<div class="overlay">
-							<h2>Bersepeda Di Tengah Pandemi</h2>
+							<h2>Pembohong~</h2>
 						</div>
 					</div>
 					<div class="text-box">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.
+							tempor incididunt ut labore et dolore magna aliqua.
 						</p>
-						<a href="bersepeda-di-tengah-pandemi.html">Read More...</a>
+						<a href="pembohong.html">Read More...</a>
 					</div>
 				</div>
 				<div class="blog-content">
 					<div class="image-box">
-						<img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2020/02/12/4244832796.jpg" alt="">
+						<img src="https://scontent-sin6-2.xx.fbcdn.net/v/t1.6435-9/242922865_336720421583580_4108067865079700173_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=9267fe&_nc_eui2=AeEzoPY_qwWKem6WUunVBnrM7bW4vFYkjR_ttbi8ViSNH4taCkpzptWBNCyLW4EOHuElKmhUY5Qmf2xgEyhFijAQ&_nc_ohc=BkZIlX_stEUAX85uBzU&_nc_ht=scontent-sin6-2.xx&oh=6d19a8ba5346a7e82544b7dabf37a836&oe=61741DBF" alt="">
 						<div class="overlay">
-							<h2>Maskeran bung</h2>
+							<h2>Historia wangi banget</h2>
 						</div>
 					</div>
 					<div class="text-box">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat.
+							tempor incididunt ut labore et dolore magna aliqua.
 						</p>
-						<a href="maskeran-bung.html">Read More...</a>
+						<a href="historia-wangi.html">Read More...</a>
 					</div>
 				</div>
 			</div>
-			<!-- End Content -->
-
-			<div class="clear"></div>
+			
 		</div>
 	</div>
+	<!-- End Content -->
 
-	<!-- Footer -->
-	<div class="wrapper">
+	<!-- Start Footer -->
+	<div class="wrapper" id="footer">
 		<div class="container">
-
-			<!-- Start Footer -->
-			<div class="footer">
-				<div id="copyright" align="center">
-					Copyright to Naji, created September 2021
-				</div>
-
-				<div id="contactMe">
-					<img src="https://lh3.google.com/u/5/d/1oTZooPk9Nu40X3N1THYgOQ6rJnmMf3Gg=w1326-h637-iv1" id="cmMe">
-					<ul>
-						<li>
-							<a href="https://fb.me/3pls0de">
-								<img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png">
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/3pls0de">
-								<img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png">
-							</a>
-						</li>
-						<li>
-							<a href="https://www.instagram.com/naji_3p/">
-								<img src="https://img1.pngdownload.id/20180330/pxe/kisspng-computer-icons-logo-instagram-5abe0fd98bbeb0.7102070915224053375724.jpg">
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/MN_1241">
-								<img src="https://image.similarpng.com/very-thumbnail/2020/05/Modern-paint-splash-Twitter-logo-PNG.png">
-							</a>
-						</li>
-					</ul>
-				</div>
+			<div id="copyright">
+				<b>
+					Created By : Muhammad Najiyyullah ;D
+				</b>
 			</div>
-			<!-- End Footer -->
-
+			<div id="contactMe">
+				<p>Contact Me at :</p>
+				<ul>
+					<li>
+						<img src="https://e7.pngegg.com/pngimages/519/396/png-clipart-product-design-line-people-icon-black-and-white-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D1%8B%D0%B5-%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8-thumbnail.png" id="cmMe">
+					</li>
+					<li>
+						<a href="https://fb.me/3pls0de" target="_blank">
+							<img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png">
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/3pls0de" target="_blank">
+							<img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/naji_3p/" target="_blank">
+							<img src="https://img1.pngdownload.id/20180330/pxe/kisspng-computer-icons-logo-instagram-5abe0fd98bbeb0.7102070915224053375724.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/MN_1241" target="_blank">
+							<img src="https://image.similarpng.com/very-thumbnail/2020/05/Modern-paint-splash-Twitter-logo-PNG.png">
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
-	<!-- Footer -->
 </body>
 </html>
