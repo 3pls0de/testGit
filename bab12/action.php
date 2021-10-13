@@ -24,10 +24,27 @@ if (isset($_POST['submit'])) {
 		<div class="container">
 			<div class="row d-flex justify-content-center">
 				<div class="col col-8">
-					<h4>Berhasil menginputkan :</h4>
-					<h4>Nama Barang = <?=$name?></h4>
-					<h4>Harga Barang = <?=$hargaBarang?></h4>
-					<h4>kodeBarang = <?=$kodeBarang?></h4>
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Nama Barang</th>
+							    <th scope="col">Harga Barang</th>
+							    <th scope="col">Kode Barang</th>
+							</tr>
+							<tr>
+							<th scope="row">1</th>
+						    	<td><?=$name?></td>
+						    	<td><?=$hargaBarang?></td>
+						    	<td><?=$kodeBarang?></td>
+						    </tr>
+						    <th scope="row">1</th>
+						    	<td><?=$name?></td>
+						    	<td><?=$hargaBarang?></td>
+						    	<td><?=$kodeBarang?></td>
+						    </tr>
+						</thead>
+					</table>
 				</div>
 			</div>
 		</div>
