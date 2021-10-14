@@ -5,6 +5,8 @@ require_once("connection.php");
 $query = "SELECT * FROM siswa";
 $result = mysqli_query($mysqli, $query);
 
+require_once("session_check.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -40,12 +42,33 @@ $result = mysqli_query($mysqli, $query);
 					<li class="nav-item">
 						<a href="#" class="nav-link" aria-current="page">Daftar Siswa</a>
 					</li>
+
+					<?php
+
+					if ($sessionStatus == false) {
+
+					?>
+
+					<li class="nav-item">
+						<a href="login.php" class="nav-link" aria-current="page">Login Petugas</a>
+					</li>
+
+				<?php } else { ?>
+
+					<li class="nav-item">
+						<a href="logout.php" class="nav-link" aria-current="page">LogOut <?=$sessionName?></a>
+					</li>
+
+				<?php } ?>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	<div id="student-list">
 		<div class="container">
+
+			<?php if ($sessionStatus) { ?>
+
 			<div class="rom mb-4">
 				<div class="col">
 					<h2>DAFTAR SISWA</h2>
@@ -99,6 +122,7 @@ $result = mysqli_query($mysqli, $query);
 					</table>
 				</div>
 			</div>
+		<?php } echo "<h2>Login Terlebih Dahulu!</h2>"; ?>
 		</div>
 	</div>
 </body>
