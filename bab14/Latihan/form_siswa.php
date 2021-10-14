@@ -1,3 +1,13 @@
+<?php
+
+require_once("session_check.php");
+
+if ($sessionStatus == false) {
+	header("Location: index.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
