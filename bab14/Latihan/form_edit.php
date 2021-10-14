@@ -1,5 +1,11 @@
 <?php
 
+require_once("session_check.php");
+
+if ($sessionStatus == false) {
+	header("Location: index.php");
+}
+
 require_once("connection.php");
 
 $error = 0;
