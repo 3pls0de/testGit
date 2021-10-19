@@ -19,7 +19,7 @@ if (isset($_POST['kode_barang']) && isset($_POST['name']) && isset($_POST['harga
 
 // FOto
 $files = $_FILES['foto'];
-$path = "../penyimpanan/";
+$path = "../penyimpanan1/";
 
 if (!empty($files["name"])) {
 	$filepath = $path . $files["name"];
@@ -39,6 +39,9 @@ if ($error == 1) {
 	echo "Terjadi kesalahan dalam proses input data";
 	exit();
 }
+
+$filepath = preg_replace('/[.]/', '', $filepath);
+// echo "$filepath";
 
 $query = "INSERT INTO barang (id_barang, nama_barang, harga, foto)
 		VALUES('{$kode_barang}', '{$name}', '{$harga}', '{$filepath}')";

@@ -1,3 +1,15 @@
+<?php
+
+require_once("action/connection.php");
+
+$query = "SELECT * FROM barang";
+$result = mysqli_query($mysqli, $query);
+
+require_once("action/session_check.php");
+
+?>
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
 			<!-- Navbar-brand -->
@@ -27,7 +39,7 @@
 					<?php } else { ?>
 
 					<li class="nav-item">
-						<a href="logout.php" class="nav-link" aria-current="page">LogOut <?=$sessionName?></a>
+						<a href="action/logout.php" class="nav-link" aria-current="page">LogOut <?=$sessionName?></a>
 					</li>
 
 					<?php } ?>
