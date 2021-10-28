@@ -62,7 +62,8 @@ $result = mysqli_query($mysqli, $query);
 								<th scope="col">#</th>
 								<th scope="col">ID Barang</th>
 								<th scope="col">Nama Barang</th>
-								<th scope="col">Kode Barang</th>
+								<th scope="col">Harga Barang</th>
+								<th scope="col">Aksi</th>
 							</tr>
 						</thead>
 						<tbody>
