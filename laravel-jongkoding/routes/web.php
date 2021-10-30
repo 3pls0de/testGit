@@ -17,6 +17,8 @@
 Route::get('/namasiswa',"SiswaController@index");
 Route::get('/lakek',"SiswaController@lakek");
 Route::get('/a',"SiswaController@index");
+Route::get('/siswapertama',"SiswaController@siswapertama");
+Route::get('/store',"SiswaController@store");
 
 
 Route::get('/', function () {

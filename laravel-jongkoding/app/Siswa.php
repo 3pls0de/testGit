@@ -14,4 +14,8 @@ class Siswa extends Model
     protected $keyType = 'string';
 
     public $timestamps = false;
+
+    protected $fillable = [
+        'nis', 'nama', 'jk', 'alamat', 'tmp_lahir', 'tgl_lahir', 'telepon', 'id_jurusan', 'foto'
+    ];
 }
