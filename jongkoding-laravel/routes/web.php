@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserController2;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,62 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/coba-routing', function () {
+//     return "ini adalah hasil percobaan routing";
+// });
+
+Route::get('/coba-routing/{nama}', function ($nama) {
+    return "ini adalah hasil percobaan routing " . $nama;
+});
+
+Route::get('/coba-routing/{nama?}', function ($nama = "namanya mana?") {
+    return "ini adalah hasil percobaan routing " . $nama;
+});
+
+Route::get('/user', [UserController::class, 'index'])->name('list-user'); //sekaligus pemberian nama pada route
+
+Route::middleware(['auth'])->group(function(){
+    //route di dalam ini menggunakan middleware auth
+    Route::get('/users', [UserController::class, 'index'])->name('list-user');
+    Route::get('/users/profile', function(){
+
+    });
+});
+
+
+Route::prefix('userss')->group(function(){ // tanpa titik malah berhasil, ntah apa bedanya
+    Route::get('/', [UserController::class, 'index'])->name('list-user');
+    Route::get('/profile', function(){
+        return "a";
+    });
+});
+
+Route::resource('usera', UserController2::class)->parameters([
+    'user' => 'user_type' // ntah gimana caranya agar parameternya opsional
+    // akan menghasilkan URI /user/{user_type}
+])->names([
+    'index' => 'user.list'
+    // tentukan nma aaction kemudian beri nama  setelah prefix user
+]);
+
+// parameter
+Route::get('/ca', function(){
+    return view('coba', [
+        "name" => "jongkoding"
+    ]);
+});
+// alternatif
+Route::get('/cab', function(){
+    return view('coba')->with('name', 'Jonkoging');
+});
+
+Route::get('/siswa', [SiswaController::class, 'index']);
+
+Route::get('/lakek', [SiswaController::class, 'lakek']);
+
+Route::get('/siswajrs', [SiswaController::class, 'siswajrs']);
+
+Route::get('/siswafof', [SiswaController::class, 'siswafof']);
+
+Route::get('/store', [SiswaController::class, 'store']);
