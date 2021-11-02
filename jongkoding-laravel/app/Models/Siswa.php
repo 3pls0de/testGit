@@ -11,8 +11,8 @@ class Siswa extends Model
 
     // protected $connection = 'sqlite'; // jika ingin memakai db berbeda dri default
 
-    protected $table ='siswa';
-    protected $primaryKey ='nis';
+    protected $table = 'siswa';
+    protected $primaryKey = 'nis';
     
     // untuk field primary
     // public $incrementing = false;

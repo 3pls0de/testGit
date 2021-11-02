@@ -71,6 +71,8 @@ Route::get('/cab', function(){
 
 Route::get('/siswa', [SiswaController::class, 'index']);
 
+Route::get('/sm', [SiswaController::class, 'sm']);
+
 Route::get('/lakek', [SiswaController::class, 'lakek']);
 
 Route::get('/siswajrs', [SiswaController::class, 'siswajrs']);
@@ -78,3 +80,7 @@ Route::get('/siswajrs', [SiswaController::class, 'siswajrs']);
 Route::get('/siswafof', [SiswaController::class, 'siswafof']);
 
 Route::get('/store', [SiswaController::class, 'store']);
+
+Route::get('/update/{id}', [SiswaController::class, 'update']);
+
+Route::get('/delete/{id}', [SiswaController::class, 'delete']);
