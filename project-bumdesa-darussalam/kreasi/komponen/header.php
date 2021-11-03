@@ -20,8 +20,8 @@
             <a class="dropdown-item" href="checkout.html">Checkout</a>
           </div>
         </li> -->
-        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        <li class="nav-item cart"><a href="cart.html" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
+        <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+        <li class="nav-item cart"><a href="cart.php" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
       </ul>
     </div>
   </div>
