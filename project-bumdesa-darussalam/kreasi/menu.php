@@ -76,7 +76,7 @@
       </div>
     </section>
 
-    <section class="ftco-intro">
+    <!-- <section class="ftco-intro">
     	<div class="container-wrap">
     		<div class="wrap d-md-flex align-items-xl-end">
 	    		<div class="info">
@@ -144,7 +144,7 @@
 	    		</div>
     		</div>
     	</div>
-    </section>
+    </section> -->
 
     <section class="ftco-section">
     	<div class="container">
@@ -253,7 +253,7 @@
         		</div>
         	</div>
 
-        	<div class="col-md-6">
+        	<!-- <div class="col-md-6">
         		<h3 class="mb-5 heading-pricing ftco-animate">Desserts</h3>
         		<div class="pricing-entry d-flex ftco-animate">
         			<div class="img" style="background-image: url(images/dessert-1.jpg);"></div>
@@ -355,7 +355,7 @@
 	        			</div>
 	        		</div>
         		</div>
-        	</div>
+        	</div> -->
         </div>
     	</div>
     </section>
@@ -378,7 +378,7 @@
 
 		              <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Drinks</a>
 
-		              <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Desserts</a>
+		              <!-- <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Desserts</a> -->
 		            </div>
 		          </div>
 		          <div class="col-md-12 d-flex align-items-center">
@@ -527,7 +527,7 @@
 		              	</div>
 		              </div>
 
-		              <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+		              <!-- <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
 		                <div class="row">
 		              		<div class="col-md-4 text-center">
 		              			<div class="menu-wrap">
@@ -596,7 +596,7 @@
 		              			</div>
 		              		</div>
 		              	</div>
-		              </div>
+		              </div> -->
 		            </div>
 		          </div>
 		        </div>
