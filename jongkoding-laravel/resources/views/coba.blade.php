@@ -12,6 +12,7 @@
 		<h1>Halo, kamu siapa?</h1>
 	@elseif($name != "")
 		<h1>Halo, aku {{$name}}</h1>
+	@else
 	@endif
 
 	@switch($name)
@@ -23,6 +24,7 @@
 			@break
 		@default
 			<h1>Halo, aku bukan siapa2</h1>
+			@continue
 	@endswitch
 
 <!-- for, foreach, forelse, while -->
