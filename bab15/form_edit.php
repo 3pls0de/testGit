@@ -77,7 +77,7 @@ foreach ($result as $barang) {
 							<img src="<?=$foto?>" class="preview">
 							<a href="hapus_foto.php?id_barang=<?=$id_barang?>">Hapus Foto</a>
 						</div>
-					<?php } ?>
+						<?php } ?>
 
 						<div class="form-group mb-2">
 							<label for="foto">Foto</label>

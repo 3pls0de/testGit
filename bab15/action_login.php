@@ -25,7 +25,7 @@ $data = mysqli_fetch_assoc($result);
 if (is_null($data)) {
 	echo "Email tidak terdaftar. <a href='index.php'>Kembali</a>";
 	exit();
-}elseif ($data[password] != $password) {
+}elseif ($data['password'] != $password) {
 	echo "Password Salah! <a href='index.php'>Kembali</a>";
 	exit();
 } else {
